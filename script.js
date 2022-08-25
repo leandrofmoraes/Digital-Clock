@@ -1,14 +1,13 @@
-/*var h = document.querySelector('#hr').innerHTML;
-var m = document.querySelector('#min').innerHTML;
-var s = document.querySelector('#sec').innerHTML;*/
-var clock = document.querySelector('#disp');
+"use strict"
+
+let clock = document.querySelector('#disp');
 window.addEventListener("load", relogio);
 
 function relogio(){
-    var data = new Date();
-    var hours = data.getHours();
-    var minutes = data.getMinutes();
-    var seconds = data.getSeconds();
+    let data = new Date();
+    let hours = data.getHours();
+    let minutes = data.getMinutes();
+    let seconds = data.getSeconds();
 
     if (hours < 10) hours=`0${hours}`;
     if (minutes < 10) minutes=`0${minutes}`;
@@ -17,5 +16,3 @@ function relogio(){
 }
 
 setInterval(relogio, 1000);
-
-
