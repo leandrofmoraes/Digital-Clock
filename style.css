@@ -4,23 +4,31 @@
     src: url('_fonts/digital-7.ttf');
 }
 
-#disp{
+main{
+
+    display: flex;
+    flex-flow: row, nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section{
     font-family: 'digital-7', serif;
     font-size: 7em;
+
+    background-color: #bacecf;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
 
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 0.2em;
-    
 
-    background-color: #bacecf;
+    padding-bottom: 0.2em;
+
     width: 3.5em;
     height: 1em;
     margin: 15% auto;
-
-    border: 2px solid black;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
-    
 }
